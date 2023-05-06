@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/forjob?serverTimezone=Asia/Seoul
+    username: maewakka
+    password: qhdks123!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        use_sql_comments: true
+
+server:
+  servlet:
+    context-path: /api
+
+mail:
+  naver:
+    email: maewakka123@naver.com
+    id: maewakka123
+    password: dlgusgh211
+
+selenium:
+  driver-path: /Users/woo/Desktop/woo/Workspace/Utils/chromedriver_mac_arm64/chromedriver
+
+kakao:
+  client-id: 7c063af9c71889098fe641de04aa6b7e
+  redirect-uri: http://localhost:3000/user/kakao/callback
